@@ -14,7 +14,7 @@ public class randomCup {
         //Trying how it works
         System.out.println("Random number between 0 and 1 : " + Math.random()); 
         System.out.println("Random number between 0 and 1 : " + Math.random());
-        //
+        //Get random cup
         System.out.println("Random value between 1 and 10 : " + getRandomInteger(10, 1));
         System.out.println("Random value between 1 and 10 : " + getRandomInteger(10, 1));
      }
