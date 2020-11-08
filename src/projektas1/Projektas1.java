@@ -35,10 +35,7 @@ public class Projektas1 {
         sk =sk * sk * sk;
         
         System.out.println(sk);
-        
-  
-        
-        
+   
     }
     
 }
