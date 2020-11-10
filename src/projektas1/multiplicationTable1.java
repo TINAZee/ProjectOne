@@ -13,20 +13,22 @@ public class multiplicationTable1 {
     
      public static void main(String[] args) {
          
-         int from = 11;
-         int to = 17;
+         int from = 1;
+         int to = 3;
          
-          System.out.println('\t');
-          for(;from <= to; from++){
-              System.out.println(from);
-              System.out.println('\t');
-          }
+         System.out.print('\t');
+         
+          for(int i = from; i <= to; i++){
+              System.out.print(i);
+              System.out.print('\t');
+         }
+         System.out.println();
          for (int i = from; i <= to; i++) {
-             System.out.println(i);
-             System.out.println('\t');
+             System.out.print(i);
+             System.out.print('\t');
             for (int j = from; j <= to; j++) {
-                 System.out.println(from*j);  
-                 System.out.println('\t');
+                 System.out.print(i*j);  
+                 System.out.print('\t');
      }
              System.out.println("");
      }

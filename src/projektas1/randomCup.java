@@ -11,21 +11,28 @@ package projektas1;
  */
 public class randomCup {
      public static void main(String[] args) {
-     
+         
+         //if I want to give a head start I can write like that:
+         //double[] puodukai = {0,0,6.7,1.2,0,0,0,0,2.2}
          double[] puodukai = new double[10];
          //-1 because there is no winner yet
          int winner = -1;
          
-         while (winner < 0) {
+         while (true) {
+             
              for (int i = 0; i < puodukai.length; i++) {
                  puodukai[i] += Math.random();
-                 System.out.println(puodukai[i]);
+                 //if I want to see how cups is filling
+                 //System.out.println(puodukai[i]);
                  if (puodukai[i] >= 10) {
                      if(winner < 0 || puodukai[winner] < puodukai[i])
                      winner = i;
+                     break;
                  }
              }
-             System.out.println("------------");
+             if (winner > 0){
+                 break;
+             }
          }
          System.out.println("Winner is: ");
          System.out.println(winner);
