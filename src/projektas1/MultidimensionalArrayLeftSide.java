@@ -39,6 +39,10 @@ public class MultidimensionalArrayLeftSide {
 //                n[i][i+j]=a[j];                
 //             }
 //        }
+
+
+    int x = 1%5;
+    System.out.println(x);
 //        //ciklas iraso reiksmes likusiai masyvo pusei
 //        for (int j = a.length-1; j > 0; j--) {
 //            for (int i = a.length-1; i > 0; i--){
